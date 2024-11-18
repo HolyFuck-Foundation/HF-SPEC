@@ -13,9 +13,10 @@ Official HolyFuck(tm) specification.
 | . | Push the byte at the memory pointer to the stack |
 | , | Pop a byte from the stack and write it to the current memory pointer |
 | $ | Starts an assembly instruction |
-| ; | Ends an assembly instruction or function call |
+| ; | Ends an assembly instruction, function call, memory allocation |
 | : | Defines a function (see (Functions)[#functions]) |
 | @ | Calls a function |
+| & | Starts a memory allocation (e.x. &1024;) |
 
 ## Functions
 Functions are defined as follows:
