@@ -12,10 +12,10 @@ Official HolyFuck(tm) specification.
 | ] | Jump back to the matching [ if the byte at the memory pointer is nonzero |
 | . | Push the byte at the memory pointer to the stack |
 | , | Pop a byte from the stack and write it to the current memory pointer |
-| $ | Starts an assembly instruction |
 | ; | Ends an assembly instruction, function call, memory allocation |
 | : | Defines a function (see (Functions)[#functions]) |
 | @ | Calls a function |
+| $ | Calls an external function |
 | & | Starts a memory allocation (e.x. &1024;) |
 
 ## Functions
